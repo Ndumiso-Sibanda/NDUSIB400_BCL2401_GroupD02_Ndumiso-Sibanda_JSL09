@@ -1,11 +1,19 @@
-fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=;hjksdf;kljsdfgl;kdsjfgljksdfglkjhsdfg")
-    .then(res => res.json())
-    .then(data => {
-        console.log(data)
-        document.body.style.backgroundImage = `url(${data.urls.regular})`
-		document.getElementById("author").textContent = `By: ${data.user.name}`
-    })
-
+fetch(
+ "https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=;hjksdf;kljsdfgl;kdsjfgljksdfglkjhsdfg"
+)
+ .then((res) => res.json())
+ .then((data) => {
+  console.log(data);
+  if (data.urls && data.urls.regular) {
+   document.body.style.backgroundImage = `url(${data.urls.regular})`;
+   document.getElementById("author").textContent = `By: ${data.user.name}`;
+  } else {
+   console.error("Image URL not found in API response");
+  }
+ })
+ .catch((error) => {
+  console.error("Error fetching or parsing data:", error);
+ });
 
 // unhandledrejection PromiseRejectionEvent {isTrusted: true, promise: Promise, reason: TypeError: Cannot read property 'regular' of undefined
 //     at https://cw1.scrimba.com/index.js:5:64, type: "unhandledrejection", target: Window, …}
