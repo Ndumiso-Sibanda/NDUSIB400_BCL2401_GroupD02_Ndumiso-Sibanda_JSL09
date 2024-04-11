@@ -1,42 +1,26 @@
-# [JSL09] Submission: Personal Dashboard Chrome Extension
+Project Title
+A project that fetches and displays various data from different APIs, including random images from Unsplash, Dogecoin information from CoinGecko, and weather data from OpenWeatherMap.
 
-You will:
-1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_09_StudentNo_Classcode_Group_Name-Surname_JSL09
-2. Code your solution.
-3. Commit changes to your GitHub repository.
-4. Submit the GitHub Repository Link to the LMS [JSL09] Submission Project Tab.
+Features
+Displays a random image as the background.
+Shows information about Dogecoin, including its name, logo, current price, 24-hour high, and 24-hour low.
+Updates the current time every second.
+Retrieves the user's location and displays the weather icon, temperature, and city name.
 
-In this project you will follow along with the Scrimba Promise Rejection capstone to create a Personal Dashboard for your Chrome Browser. Note you are only required to submit the project code. You DO NOT need to submit the deployed Chrome extension. 
+Challenges Faced
+Handling API responses: Ensuring that the code correctly handles API responses and error conditions.
+Cross-origin resource sharing (CORS): Dealing with CORS issues when fetching data from different APIs.
+UI updates: Updating the UI dynamically with fetched data without causing layout issues or performance problems.
 
-Scrimba Reference Link: https://scrimba.com/learn/frontend/promise-rejection-coc4a4e4d8d208ab33b190dd5
+What I Learned
+How to fetch data from APIs using the fetch API in JavaScript.
+Error handling in asynchronous JavaScript code using catch blocks.
+Working with geolocation data and displaying dynamic content based on the user's location.
 
-![](<[JSL09 Solution].png>)
-Note that this background image is dynamically generated so your's will look different.
+Improvements
+Refactoring: The code could be refactored to improve readability and maintainability.
+Error handling: Enhancing error handling to provide more informative error messages to the user.
+UI/UX improvements: Adding loading spinners or progress indicators when fetching data to provide better feedback to the user.
 
-## What You Need to Do:
-
-1. Clone the provided Starter Code Repository to your local development environment (e.g., VSCode): https://github.com/CodeSpace-Academy/Module_09_StudentNo_Classcode_Group_Name-Surname_JSL09
-2. Open the cloned project in your code editor.
-3. Code your solution for the challenge as per the provided instructions.
-4. If you have coded your Personal Dashboard challenge in Scrimba, you will need to download the zip folder of your project files. Unzip the project files into your JSL09 project repo on GitHub. Make sure to NOT use the Scrimba README. Instead you will keep your starter code README.
-5. Commit your changes to your local Git repository with meaningful commit messages.
-6. Push your local Git repository to your GitHub account.
-7. Verify that the changes have been successfully pushed to your GitHub repository.
-
-![alt text](download-scrimba-files.png)
-You can download your Scrimba files in the bottom right hand corner of the Scrimba IDE panel. 
-
-## What You Need to Include:
-
-1. Ensure that your code includes the necessary modifications to meet the challenge requirements.
-2. Your GitHub repository should contain the updated code files.
-
-## How We'll Assess Your Work:
-
-1. We will review your GitHub repository to ensure that it contains the updated code files.
-2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
-
-
-
-
+Conclusion
+This project has provided valuable experience in working with APIs and asynchronous JavaScript. By overcoming various challenges, I've improved my skills in handling API data and updating the UI dynamically. Moving forward, I plan to continue refining this project and applying these skills to future projects.
